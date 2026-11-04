@@ -1,0 +1,354 @@
+.newCourse *{
+    padding: 0;
+    margin: 0;
+}
+
+.newCourse .right{
+    margin: 50px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 60%;
+    padding-top: 0;
+}
+
+.newCourse .header{
+    list-style-type: none;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+      border-bottom: 0.5px solid #DCE6F0;
+   padding-bottom: 10px;
+   width: 100%;
+}
+
+
+
+.newCourse .right .header li{
+     background-color: #DCE6F0;
+    color: #1F3A5F;
+    padding: 5px;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.newCourse .right .header .active{
+    color: #DCE6F0;
+    background-color: #1F3A5F;
+}
+
+
+.newCourse .right .headerItem{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    margin-right: 250px;
+    background-color: white;
+    padding: 20px;
+border-radius: 10px;
+    border: 0.5px solid #DCE6F0;
+
+}
+
+.right h3{
+  color: #1F3A5F;
+  font-size: 20px; 
+  
+}
+
+.headerItem .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   margin-right: 20px;
+}
+
+.headerItem .item label{
+    font-size: 17px;
+}
+ 
+.headerItem .item input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #DCE6F0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+    margin-right: 10px;
+}
+
+.headerItem .item textarea{
+      width: 100%;
+    height: 80px;
+    border: 1px solid #DCE6F0;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+    font-size: 17px;
+}
+
+.headerItem .item select{
+      width: 100%;
+    height: 50px;
+    border: 1px solid #DCE6F0;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.headerItem button, .publishItem button{
+     color: #1F3A5F;
+    background-color: #D9A441;
+       padding: 10px 12px;
+    font-size:20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100px;
+}
+
+.headerItem button:hover, .publishItem button:hover{
+   background-color:  #C08F32;
+}
+
+.headerItem .row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.headerItem .row span{
+    color: #1F3A5F;
+    border: 1px solid #1F3A5F;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.modules{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.module_item{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border: 0.5px solid #DCE6F0;
+    border-radius: 10px;
+}
+
+.module_item .head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #DCE6F0;
+    width: 100%;
+
+}
+
+.module_item .head p{
+    color: #5B6472;
+}
+
+.module_item .list{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+
+}
+
+
+.module_item .list .lessons, .module_item .list .quizes, .module_item .list .assignments {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 5px;
+    border-bottom: 0.5px solid #DCE6F0;
+}
+
+
+.module_item .list .lessons .item{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 0.5px solid #DCE6F0;
+    padding: 10px 0; 
+    margin: 0;
+    align-items: center;
+}
+
+.quizes .item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.quizes .options{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+
+.quizes .options li{
+    color: #5B6472;
+    padding: 2px;
+
+}
+
+.module_item .list .item span{
+    margin: 0;
+}
+
+.module_item .btns{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.addLesson button, .addQuiz button , .addAssignment button, .addmodule button{
+    font-size: 15px;
+    width: auto;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+.publishItem{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-right: 250px;
+    background-color: white;
+    padding: 20px;
+border-radius: 10px;
+    border: 0.5px solid #DCE6F0;
+}
+
+/* ---------- Lesson video link ---------- */
+.newCourse .videoPreview{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.newCourse .videoPreview iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.newCourse .hint{
+    font-size: 14px;
+    color: #5B6472;
+}
+
+.newCourse .hint.error{
+    color: #A5301F;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px){
+    .newCourse .right{
+        width: auto;
+        margin: 20px 0;
+    }
+
+    .newCourse .right .headerItem,
+    .newCourse .publishItem{
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px){
+    .newCourse .right{
+        margin: 10px 0;
+    }
+
+    .newCourse .header{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .newCourse .right .header li{
+        padding: 6px 10px;
+        font-size: 15px;
+    }
+
+    .newCourse .right .headerItem,
+    .newCourse .publishItem{
+        padding: 14px;
+    }
+
+    .headerItem .item{
+        margin-right: 0;
+    }
+
+    .headerItem .item input,
+    .headerItem .item textarea,
+    .headerItem .item select{
+        box-sizing: border-box;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .headerItem .item label{
+        font-size: 16px;
+    }
+
+    .headerItem .row{
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .module_item .head,
+    .module_item .list .lessons .item{
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .quizes .options{
+        grid-template-columns: 1fr;
+    }
+
+    .module_item .btns,
+    .addmodule .btns{
+        flex-wrap: wrap;
+    }
+}
+
+/* The "+ Add lesson / quiz / assignment" actions inside the module draft */
+.newCourse .addmodule .btns{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.newCourse .addmodule .btns span{
+    color: #1F3A5F;
+    border: 1px solid #1F3A5F;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.newCourse .addmodule .btns span:hover{
+    background-color: #DCE6F0;
+}

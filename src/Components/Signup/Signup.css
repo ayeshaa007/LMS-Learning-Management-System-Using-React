@@ -1,0 +1,133 @@
+.signup{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.signup .left{
+      
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+  width: 50%;
+ padding: 45px 100px;
+ padding-bottom: 10px;
+}
+
+.signup .left h3{
+font-size: 30px;
+color: #1F3A5F;
+margin: 0;
+}
+
+.signup .left .btns{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.signup .left .btns .inactive{
+    cursor: pointer;
+     background-color: #DCE6F0;
+    color: #1F3A5F; 
+    border: 0.5px solid #1F3A5F;
+     padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.signup .left .btns .active{
+   color: #1F3A5F;
+    background-color: #D9A441; 
+    border: 0.5px solid #1F3A5F;
+      cursor: pointer;
+     padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+.signup .left p,label{
+    color: #5B6472;
+}
+
+.signup .left label{
+    margin: 5px 0;
+}
+
+.signup .left input{
+    height:  35px;
+    border: 1px solid #5B6472;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.signup .left button{
+      color: #1F3A5F;
+    background-color: #D9A441;
+       padding: 10px 12px;
+    font-size:20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.signup .left button:hover{
+     background-color: #C08F32;
+}
+
+.signup .left p span{
+    color: #1F3A5F;
+}
+
+.signup .right{
+  padding: 87px 100px;
+    background-color: #DCE6F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup img{
+    width: 430px;
+    height: 350px;
+    border-radius: 10px;
+    
+}
+
+
+@media (max-width: 1024px){
+    .signup .left{
+        padding: 40px 40px 10px;
+    }
+
+    .signup .right{
+        padding: 60px 40px;
+    }
+
+    .signup img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+    .signup{
+        flex-direction: column;
+    }
+
+    .signup .left{
+        width: auto;
+        padding: 40px 24px 30px;
+    }
+
+    .signup .left .btns{
+        flex-wrap: wrap;
+    }
+
+    .signup .right{
+        display: none;
+    }
+}

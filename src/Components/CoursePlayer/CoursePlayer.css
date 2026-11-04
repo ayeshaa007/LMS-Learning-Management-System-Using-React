@@ -1,0 +1,545 @@
+.coursePlayer{
+      display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+
+.coursePlayer .left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+border-right: 1.5px solid #DCE6F0;
+padding-right: 60px;
+background-color: white;
+margin: 0;
+
+}
+
+.coursePlayer .right{
+    display: flex;
+    flex-direction: column;
+    width: 27%;
+    height: auto;
+    padding: 20px;
+     border-radius: 10px;
+}
+
+.coursePlayer p{
+    color: #5B6472;
+    font-size: 15px;
+    margin: 3px;
+    margin-left: 0;
+}
+
+.coursePlayer .left h3{
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+    font-weight: 500;
+}
+
+.coursePlayer .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    padding-left: 0;
+    gap: 25px;
+}
+
+.coursePlayer .last{
+  border-top: 1.5px solid #DCE6F0;
+  padding: 15px;
+  padding-left: 0;
+}
+
+.coursePlayer .left ul{
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:0;
+    gap: 25px;
+    list-style-type: none;
+    color: #5B6472;
+    font-size: 18px;
+    margin: 0;
+    padding-bottom: 10px;
+}
+.coursePlayer .left ul li{
+padding: 5px 0;
+   border-bottom: 2px solid #F7F9FB;
+   cursor: pointer;
+}
+.coursePlayer .left ul.tabs li.active{
+    color: #1F3A5F;
+    border-bottom: 2px solid #E0A527;
+}
+
+.coursePlayer .left ul.tabs li:hover{
+    color: #1F3A5F;
+    border-bottom: 2px solid #E0A527;
+}
+
+
+.coursePlayer .right ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+   padding: 0;
+   gap: 5px;
+font-weight: 500;
+
+}
+
+.coursePlayer .right ul li{
+    color: #5B6472;
+   cursor: pointer;
+font-size: 17px;
+}
+
+.coursePlayer .right .play{
+    color: #1F3A5F;
+
+}
+
+.coursePlayer .right ul li:hover{
+    color: #1F3A5F;
+}
+
+.coursePlayer .right .moduleGroup{
+    margin-bottom: 15px;
+}
+
+.coursePlayer .right .moduleGroup:first-child{
+    margin-top: 0;
+}
+
+.coursePlayer .right .moduleGroupHeading{
+    color: #1F3A5F;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 0 8px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #DCE6F0;
+}
+
+.coursePlayer button{
+    color: #1F3A5F;
+    background-color: #D9A441;
+    padding: 10px 16px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.coursePlayer button:hover{
+    background-color: #C08F32;
+}
+
+.coursePlayer .quizOptions{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 15px 0;
+}
+
+.coursePlayer .quizOptions li{
+    list-style-type: none;
+}
+
+.coursePlayer .quizOptions label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color: #5B6472;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.coursePlayer .quizOptions input[type="radio"]{
+    accent-color: #1F3A5F;
+    cursor: pointer;
+}
+
+.coursePlayer .quizResult{
+    margin-top: 10px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.coursePlayer .quizResult.correct{
+    background-color: #E7F5EA;
+    color: #22703A;
+}
+
+.coursePlayer .quizResult.incorrect{
+    background-color: #FBEAEA;
+    color: #A5301F;
+}
+
+.coursePlayer .completedBadge{
+    color: #22703A;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.coursePlayer .learningPath{
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #DCE6F0;
+}
+
+.coursePlayer .learningPath h4{
+    margin: 0 0 10px;
+}
+
+.coursePlayer .progressTrack{
+    width: 100%;
+    height: 8px;
+    background-color: #DCE6F0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.coursePlayer .progressFill{
+    height: 100%;
+    background-color: #D9A441;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+.coursePlayer .progressLabel{
+    margin-top: 8px;
+    font-size: 13px;
+}
+
+.coursePlayer .roadmap{
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #DCE6F0;
+}
+
+.coursePlayer .roadmap h4{
+    margin: 0 0 12px;
+}
+
+.coursePlayer .roadmapTrack{
+    display: flex;
+    flex-direction: column;
+}
+
+.coursePlayer .roadmapStep{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    cursor: pointer;
+    position: relative;
+    padding-bottom: 18px;
+}
+
+.coursePlayer .roadmapStep:last-child{
+    padding-bottom: 0;
+}
+
+.coursePlayer .roadmapStep:not(:last-child)::before{
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 28px;
+    width: 2px;
+    height: calc(100% - 10px);
+    background-color: #DCE6F0;
+}
+
+.coursePlayer .roadmapNode{
+    flex-shrink: 0;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #DCE6F0;
+    color: #5B6472;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.coursePlayer .roadmapStep.inprogress .roadmapNode{
+    border-color: #D9A441;
+    color: #1F3A5F;
+}
+
+.coursePlayer .roadmapStep.done .roadmapNode{
+    background-color: #22703A;
+    border-color: #22703A;
+    color: white;
+}
+
+.coursePlayer .roadmapInfo{
+    padding-top: 3px;
+}
+
+.coursePlayer .roadmapTitle{
+    color: #1F3A5F;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.coursePlayer .roadmapMeta{
+    color: #5B6472;
+    font-size: 13px;
+    margin: 2px 0 0;
+}
+
+.coursePlayer .roadmapStep:hover .roadmapTitle{
+    color: #D9A441;
+}
+
+/* ---------- Embedded YouTube video ---------- */
+.coursePlayer .videoWrap{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.coursePlayer .videoWrap iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.coursePlayer .videoWrap.noVideo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEF3F8;
+    border: 1px dashed #DCE6F0;
+}
+
+.coursePlayer .videoFallback{
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.coursePlayer .videoFallback a,
+.coursePlayer .resourceList a,
+.coursePlayer .backLink{
+    color: #1F3A5F;
+    font-weight: 500;
+}
+
+.coursePlayer .videoFallback a:hover,
+.coursePlayer .resourceList a:hover,
+.coursePlayer .backLink:hover{
+    text-decoration: underline;
+}
+
+/* ---------- Lesson details, tabs and panels ---------- */
+.coursePlayer .backLink{
+    font-size: 14px;
+    align-self: flex-start;
+}
+
+.coursePlayer .courseTitle{
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 6px 0 16px;
+}
+
+.coursePlayer .lessonMeta{
+    margin-top: 0;
+}
+
+.coursePlayer .left ul.tabs{
+    flex-wrap: wrap;
+    padding-bottom: 0;
+}
+
+.coursePlayer .tabPanel{
+    padding: 15px 0;
+    min-height: 90px;
+}
+
+.coursePlayer .notesBox{
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 110px;
+    padding: 10px;
+    border: 1px solid #DCE6F0;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 15px;
+    resize: vertical;
+}
+
+.coursePlayer .hint{
+    font-size: 13px;
+}
+
+.coursePlayer .resourceList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coursePlayer .discussion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.coursePlayer .comment{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    border: 1px solid #DCE6F0;
+    border-radius: 10px;
+    background-color: #F7F9FB;
+}
+
+.coursePlayer .comment .commentHead{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 6px;
+    font-size: 13px;
+}
+
+.coursePlayer .comment .commentHead strong{
+    color: #1F3A5F;
+}
+
+.coursePlayer .comment .commentHead span{
+    color: #9AA3AF;
+}
+
+.coursePlayer .comment p{
+    margin: 6px 0 0;
+    overflow-wrap: anywhere;
+}
+
+/* ---------- Actions / previous & next ---------- */
+.coursePlayer .actions{
+    border-top: 1.5px solid #DCE6F0;
+    margin-top: 15px;
+    padding-top: 12px;
+}
+
+.coursePlayer .navBtns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.coursePlayer button.secondaryBtn{
+    background-color: white;
+    border: 1.5px solid #1F3A5F;
+}
+
+.coursePlayer button.secondaryBtn:hover{
+    background-color: #EEF3F8;
+}
+
+.coursePlayer button:disabled{
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.coursePlayer button:disabled:hover{
+    background-color: #D9A441;
+}
+
+.coursePlayer button.secondaryBtn:disabled:hover{
+    background-color: white;
+}
+
+.coursePlayer .courseComplete{
+    background-color: #E7F5EA;
+    color: #22703A;
+    border-radius: 10px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.coursePlayer .playerMessage{
+    padding: 60px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px){
+    .coursePlayer{
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .coursePlayer .left{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px;
+        border-right: none;
+        border-bottom: 1.5px solid #DCE6F0;
+    }
+
+    .coursePlayer .right{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+}
+
+@media (max-width: 600px){
+    .coursePlayer .left{
+        padding: 16px;
+    }
+
+    .coursePlayer .right{
+        padding: 16px;
+    }
+
+    .coursePlayer .left h3{
+        font-size: 18px;
+    }
+
+    .coursePlayer .left ul{
+        font-size: 16px;
+        gap: 16px;
+    }
+
+    .coursePlayer .row{
+        padding: 12px 0;
+    }
+
+    .coursePlayer .navBtns button{
+        flex: 1;
+    }
+
+    .coursePlayer .right ul li{
+        font-size: 16px;
+    }
+}

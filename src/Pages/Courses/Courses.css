@@ -1,0 +1,43 @@
+.courses .listing{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.courses .courseSidebar{
+    width: 20%;
+}
+
+.courses .coursesList{
+width: 70%;
+padding: 20px;
+margin-left: 20px;
+}
+
+@media (max-width: 900px){
+    .courses .listing{
+        flex-direction: column;
+    }
+
+    .courses .courseSidebar{
+        width: 100%;
+        box-sizing: border-box;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px 40px;
+        padding: 10px 16px 15px;
+        border-right: none;
+        border-bottom: 0.5px solid #DCE6F0;
+    }
+
+    .courses .courseSidebar h2{
+        width: 100%;
+    }
+
+    .courses .coursesList{
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+        padding: 10px;
+    }
+}

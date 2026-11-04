@@ -1,0 +1,158 @@
+.qAndA{
+    padding: 30px;
+    background-color: white;
+    padding-top: 0;
+}
+
+.qAndA .search input{
+    height: 40px;
+    min-width: 350px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #DCE6F0;
+    margin: 10px;
+}
+
+.qAndA .search button, .answer button{
+    background-color: #1F3A5F;
+    color: white;
+    border: 1px solid white;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search button:hover, .answer button:hover{
+    color: #1F3A5F;
+    background-color: white;
+    border: 1px solid #1F3A5F;
+}
+
+.qAndA .qList{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+}
+
+.qList .qItem{
+     
+     padding: 20px;
+     border: 1px solid #DCE6F0;
+     border-radius: 10px;
+
+}
+
+.qList .qItem h4{
+    color: #1F3A5F;
+    margin: 0;
+}
+
+.qItem p{
+    color: #5B6472;
+}
+
+.qItem p span{
+    color: #9AA3AF;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.qItem p span:hover{
+    text-decoration: underline;
+}
+
+
+.alist{
+    border-top: 0.5px solid #9AA3AF;
+    padding-top: 10px;
+    border-bottom: 0.5px solid #9AA3AF;
+    
+}
+
+.alist h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.lang{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.lang span{
+    font-size: 15px;
+    padding: 7px;
+    background-color: #DCE6F0;
+    border-radius: 10px;
+}
+
+.alist .answer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+padding-right: 40px;
+
+} 
+
+.alist .answer textarea{
+ border: 1px solid #DCE6F0;
+ height: 70px;
+ padding: 10px;
+ width: 100%;
+resize: none;
+font-size: 17px;
+text-overflow: hidden;
+text-wrap: wrap;
+}
+
+.alist .answer button{
+width: 70px;
+}
+
+
+@media (max-width: 600px){
+    .qAndA{
+        padding: 0 12px 20px;
+    }
+
+    .qAndA .search{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 10px 0;
+    }
+
+    .qAndA .search input{
+        flex: 1;
+        min-width: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .qAndA .qList{
+        margin: 10px 0;
+    }
+
+    .qList .qItem{
+        padding: 14px;
+    }
+
+    .alist .answer{
+        padding-right: 10px;
+    }
+
+    .alist .answer textarea{
+        box-sizing: border-box;
+    }
+
+    .lang{
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,199 @@
+.instructorDashboard *{
+    padding: 0;
+    margin: 0;
+}
+
+.instructorDashboard{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+
+.instructorDashboard .left{
+width: 30%;
+background-color: white;
+}
+
+.instructorDashboard .left ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    list-style-type: none;
+    padding-top: 30px;
+}
+
+.instructorDashboard .left ul li{
+    font-size: 20px;
+    padding: 10px;
+padding-left: 30px;
+color: #5B6472;
+cursor: pointer;
+}
+
+.instructorDashboard .left ul li:hover{
+    background-color: #DCE6F0;
+
+}
+
+.instructorDashboard .left ul .activeBar{
+    background-color: #DCE6F0;
+color: #1F3A5F;
+}
+
+.instructorDashboard .right{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  
+}
+.instrHead{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+ align-items: center;
+}
+
+.instrHead h3{
+    color: #1F3A5F;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: 550;
+}
+
+.instrHead  button{
+    color: #1F3A5F;
+    background-color: #D9A441;
+       padding: 10px 12px;
+    font-size:16px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+.instrHead  button:hover{
+   background-color:  #C08F32;
+}
+
+.instRow{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+margin-top: 20px;
+}
+
+.instRow .item{
+    border: 1px solid #DCE6F0;
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.instRow .item p{
+    color: #5B6472;
+    font-size: 20px;
+}
+
+.instRow .item span{
+    color: #1F3A5F;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.instCourses{
+   display: flex;
+   flex-direction: column;
+margin-top: 20px;
+}
+
+.instCourses h3{
+    font-size: 17px;
+    margin: 10px 0 10px 0;
+}
+.instCourses .item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #DCE6F0;
+}
+
+.instCourses .item h4{
+    font-size: 17px;
+    font-weight: normal;
+}
+
+.instCourses .item p{
+    color: #5B6472;
+}
+
+@media (max-width: 768px){
+    .instructorDashboard{
+        flex-direction: column;
+    }
+
+    .instructorDashboard .left{
+        width: 100%;
+        border-bottom: 0.5px solid #DCE6F0;
+    }
+
+    .instructorDashboard .left ul{
+        flex-direction: row;
+        gap: 0;
+        padding-top: 0;
+        margin: 0;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .instructorDashboard .left ul li{
+        flex-shrink: 0;
+        white-space: nowrap;
+        font-size: 16px;
+        padding: 14px 16px;
+    }
+
+    .instructorDashboard .right{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .instructorDashboard .right h3{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px){
+    .instrHead{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .instRow{
+        flex-wrap: wrap;
+    }
+
+    .instRow .item{
+        width: auto;
+        flex: 1 1 200px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 600px){
+    .instCourses .item{
+        flex-direction: column;
+        gap: 6px;
+    }
+}

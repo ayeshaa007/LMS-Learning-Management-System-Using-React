@@ -1,0 +1,113 @@
+.heroSection{
+    display: flex;
+    flex-direction: row;
+padding: 70px 40px;
+height: auto; 
+border-bottom: 0.5px solid #DCE6F0;
+}
+
+.heroSection .left{
+    width: 50%;
+padding-right: 50px;
+
+}
+
+.heroSection .left h2{
+    font-size: 40px;
+    margin: 0;
+    color: #1F3A5F;
+    font-weight: 600;
+}
+
+.heroSection .left p{
+padding-right: 50px;
+color: #5B6472;
+}
+
+
+.heroSection .right{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+.heroSection .right img{
+    width: 450px;
+    border-radius: 10px;
+}
+
+.heroSection .btns{
+display: flex;
+gap: 10px;
+}
+
+.heroSection .btns a:first-child button{
+    color: white;
+    background-color: #1F3A5F;
+       padding: 12px 15px;
+    font-size:20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.heroSection .btns  a:first-child button:hover{
+    background-color: #16293F;
+}
+
+.heroSection .btns a:last-child button{
+    color: #1F3A5F;
+    border:2px solid #1F3A5F;
+      padding: 12px 15px;
+    font-size:17px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: none;
+}
+
+@media (max-width: 900px){
+    .heroSection{
+        flex-direction: column;
+        padding: 40px 24px;
+        gap: 30px;
+    }
+
+    .heroSection .left,
+    .heroSection .right{
+        width: 100%;
+    }
+
+    .heroSection .left{
+        padding-right: 0;
+    }
+
+    .heroSection .left p{
+        padding-right: 0;
+    }
+
+    .heroSection .right img{
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px){
+    .heroSection{
+        padding: 30px 16px;
+    }
+
+    .heroSection .left h2{
+        font-size: 28px;
+    }
+
+    .heroSection .btns{
+        flex-wrap: wrap;
+    }
+
+    .heroSection .btns a:first-child button,
+    .heroSection .btns a:last-child button{
+        font-size: 16px;
+    }
+}

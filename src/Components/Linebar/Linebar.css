@@ -1,0 +1,45 @@
+.linebar{
+    display: flex;
+justify-content: space-around;
+color: black;
+background-color: #ffffff;
+height: 90px;
+padding: 10px;
+align-items: center;
+border-bottom: 0.5px solid #DCE6F0;
+}
+
+.barlist{
+    display: flex;
+    flex-direction: column;
+    width: 80px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}
+
+.barlist h3{
+font-size: 25px;
+margin: 0;
+color: #1F3A5F;
+}
+
+.barlist p{
+    font-size: 15px;
+    margin: 0;
+     color: #5B6472;
+}
+
+@media (max-width: 600px){
+    .linebar{
+        height: auto;
+        flex-wrap: wrap;
+        row-gap: 18px;
+        padding: 18px 10px;
+    }
+
+    .barlist{
+        width: 50%;
+        height: auto;
+    }
+}

@@ -1,0 +1,23 @@
+
+body {
+  font-family:'Inter', sans-serif;
+  color: #1E2530;
+  background: #F7F9FB;
+  margin: 0;
+}
+
+h1,h2,h3,h4{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+button, input, select, textarea{
+  font-family: inherit;
+}

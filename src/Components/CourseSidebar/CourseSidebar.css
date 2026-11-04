@@ -1,0 +1,50 @@
+.courseSidebar{
+    display: flex;
+    flex-direction: column;
+   align-items: flex-start;
+   padding: 10px 20px;
+   border-right: 0.5px solid #DCE6F0;
+}
+
+.courseSidebar h2{
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.courseSidebar .category{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     color: #5B6472;
+}
+
+.category h3, .level h3, .price h3{
+    font-weight: normal;
+    margin-bottom: 5px;
+    
+}
+
+.category input, .level input , .price input{
+    margin-right: 10px;
+}
+
+.courseSidebar .level{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+     color: #5B6472;
+    
+}
+.courseSidebar .price{
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+     color: #5B6472;
+}
+
+@media (max-width: 900px){
+    .courseSidebar label{
+        display: block;
+        padding: 3px 0;
+    }
+}

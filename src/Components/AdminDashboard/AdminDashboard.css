@@ -1,0 +1,197 @@
+.adminDashboard * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.adminDashboard {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  min-height: 100vh;
+  background-color: #F7F9FC;
+}
+
+.adminDashboard .left {
+  width: 20%;
+  background-color: white;
+  border-right: 0.5px solid #DCE6F0;
+}
+
+.adminDashboard .left ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  list-style-type: none;
+  padding-top: 30px;
+}
+
+.adminDashboard .left ul li {
+  font-size: 20px;
+  padding: 10px;
+  padding-left: 30px;
+  color: #5B6472;
+  cursor: pointer;
+}
+
+.adminDashboard .left ul li:hover {
+  background-color: #DCE6F0;
+}
+
+.adminDashboard .left ul .activeBar {
+  background-color: #DCE6F0;
+  color: #1F3A5F;
+}
+
+.adminDashboard .right {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 75%;
+}
+
+.adminDashboard .right h3 {
+  color: #1F3A5F;
+  font-size: 22px;
+}
+
+.adminDashboard .statRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.adminDashboard .statRow .item {
+  background-color: white;
+  border: 0.5px solid #DCE6F0;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.adminDashboard .statRow .item p {
+  color: #5B6472;
+  font-size: 15px;
+}
+
+.adminDashboard .statRow .item span {
+  color: #1F3A5F;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.adminDashboard .empty {
+  color: #5B6472;
+  font-size: 16px;
+}
+
+.adminDashboard .manageList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.adminDashboard .manageItem {
+  background-color: white;
+  border: 0.5px solid #DCE6F0;
+  border-radius: 10px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adminDashboard .manageItem h4 {
+  color: #1F3A5F;
+  font-size: 17px;
+}
+
+.adminDashboard .manageItem p {
+  color: #5B6472;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.adminDashboard .manageItem button {
+  color: white;
+  background-color: #C0392B;
+  padding: 8px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.adminDashboard .manageItem button:hover {
+  background-color: #A5301F;
+}
+
+.adminDashboard{
+  min-height: calc(100vh - 50px);
+}
+
+@media (max-width: 1024px){
+  .adminDashboard .statRow{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px){
+    .adminDashboard{
+        flex-direction: column;
+    }
+
+    .adminDashboard .left{
+        width: 100%;
+        border-bottom: 0.5px solid #DCE6F0;
+    }
+
+    .adminDashboard .left ul{
+        flex-direction: row;
+        gap: 0;
+        padding-top: 0;
+        margin: 0;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .adminDashboard .left ul li{
+        flex-shrink: 0;
+        white-space: nowrap;
+        font-size: 16px;
+        padding: 14px 16px;
+    }
+
+    .adminDashboard .right{
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 16px;
+    }
+
+    .adminDashboard .right h3{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px){
+  .adminDashboard .right{
+    margin: 0;
+    width: 100%;
+  }
+
+  .adminDashboard .manageItem{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px){
+  .adminDashboard .statRow{
+    grid-template-columns: 1fr;
+  }
+}

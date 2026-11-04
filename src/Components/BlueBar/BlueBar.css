@@ -1,0 +1,32 @@
+.blueBar{
+    background-color: #1F3A5F;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px 50px;
+    align-items: center;
+}
+
+.blueBar p{
+    font-size: 20px;
+}
+
+.blueBar button{
+     padding: 10px;
+    font-size:18px; 
+    border: none;
+    background-color: #D9A441;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width: 600px){
+    .blueBar{
+        flex-direction: column;
+        gap: 15px;
+        padding: 25px 20px;
+        text-align: center;
+    }
+}

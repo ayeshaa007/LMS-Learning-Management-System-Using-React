@@ -1,0 +1,187 @@
+.courseDetail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+
+.courseDetail .left{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.courseDetail .right{
+    display: flex;
+    flex-direction: column;
+   border: 1.5px solid #DCE6F0;
+    width: 27%;
+    height: auto;
+    padding: 10px 25px;
+    margin: 12px;
+    margin-top: 25px;
+     border-radius: 10px;
+}
+
+.courseDetail p{
+    color: #5B6472;
+    font-size: 15px;
+    margin: 3px;
+    margin-left: 0;
+}
+
+.courseDetail h3{
+    color: #1F3A5F;
+    font-size: 30px;
+    margin: 8px;
+    margin-left: 0;
+}
+
+.courseDetail .row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    padding-left: 0;
+    gap: 25px;
+}
+
+.courseDetail .left .row span{
+    color: #E0A527;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.courseDetail .last{
+  border-top: 1.5px solid #DCE6F0;
+  padding: 15px;
+  padding-left: 0;
+}
+
+.courseDetail .left ul{
+      display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0;
+    gap: 25px;
+    list-style-type: none;
+    color: #5B6472;
+    font-size: 18px;
+    margin: 0;
+    
+}
+.courseDetail .left ul li{
+padding: 5px 0;
+   border-bottom: 2px solid #F7F9FB;
+   cursor: pointer;
+}
+.courseDetail .left ul li.active{
+    color: #1F3A5F;
+    border-bottom: 2px solid #E0A527;
+}
+
+.courseDetail .left ul li:hover{
+    color: #1F3A5F;
+    border-bottom: 2px solid #E0A527;
+}
+
+.courseDetail .left img{
+    height: 270px;
+    border-radius: 10px;
+}
+
+.courseDetail .right a button{
+    padding: 13px 10px;
+     border: none;
+    background-color: #D9A441;
+    border-radius: 10px;
+    cursor: pointer;
+     font-size:17px;
+     color: #292c30;
+     margin-bottom: 10px;
+}
+
+.courseDetail .right a button:hover{
+     background-color: #C08F32;
+
+}
+
+
+
+.courseDetail .curriculum{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.courseDetail .cModule{
+    border: 1px solid #DCE6F0;
+    border-radius: 10px;
+    padding: 10px 14px;
+    background-color: white;
+}
+
+.courseDetail .cModule h4{
+    margin: 0;
+    color: #1F3A5F;
+    font-size: 16px;
+}
+
+.courseDetail .cHead,
+.courseDetail .cLesson{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    color: #5B6472;
+    font-size: 15px;
+}
+
+.courseDetail .cLesson{
+    padding: 6px 0;
+    border-top: 0.5px solid #DCE6F0;
+}
+
+@media (max-width: 900px){
+    .courseDetail{
+        flex-direction: column;
+        align-items: stretch;
+        margin: 10px 16px;
+    }
+
+    .courseDetail .left,
+    .courseDetail .right{
+        width: auto;
+        margin: 10px 0;
+    }
+
+    .courseDetail .right{
+        padding: 10px 20px;
+    }
+
+    .courseDetail .left img{
+        width: 100%;
+        height: auto;
+        max-height: 270px;
+        object-fit: cover;
+    }
+
+    .courseDetail .left ul{
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+}
+
+@media (max-width: 480px){
+    .courseDetail h3{
+        font-size: 24px;
+    }
+
+    .courseDetail .row{
+        flex-wrap: wrap;
+        gap: 5px 20px;
+    }
+}

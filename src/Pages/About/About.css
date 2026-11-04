@@ -1,0 +1,213 @@
+
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F7F9FC;
+  color: #5B6472;
+}
+
+.about .hero {
+  width: 100%;
+  background-color: #1F3A5F;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.about .hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.about .hero p {
+  font-size: 18px;
+  color: #DCE6F0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about .mission {
+  max-width: 700px;
+  text-align: center;
+  padding: 60px 20px 40px;
+}
+
+.about .mission h3 {
+  color: #1F3A5F;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.about .mission p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.about .statRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: white;
+  border-top: 0.5px solid #DCE6F0;
+  border-bottom: 0.5px solid #DCE6F0;
+  padding: 40px 20px;
+}
+
+.about .statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.about .statItem span {
+  font-size: 34px;
+  font-weight: 600;
+  color: #1F3A5F;
+}
+
+.about .statItem p {
+  font-size: 15px;
+  color: #5B6472;
+}
+
+.about .values {
+  max-width: 1000px;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.about .values h3 {
+  color: #1F3A5F;
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
+.about .valueRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about .valueItem {
+  background-color: white;
+  border: 0.5px solid #DCE6F0;
+  border-radius: 10px;
+  padding: 25px;
+  width: 280px;
+  text-align: left;
+}
+
+.about .valueItem h4 {
+  color: #1F3A5F;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.about .valueItem p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.about .cta {
+  width: 100%;
+  text-align: center;
+  background-color: #DCE6F0;
+  padding: 60px 20px;
+}
+
+.about .cta h3 {
+  color: #1F3A5F;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about .cta p {
+  margin-bottom: 25px;
+}
+
+.about .ctaBtns {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+
+.about .ctaBtns button {
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.about .ctaBtns .primary {
+  background-color: #D9A441;
+  color: #1F3A5F;
+}
+
+.about .ctaBtns .primary:hover {
+  background-color: #C08F32;
+}
+
+.about .ctaBtns .secondary {
+  background-color: white;
+  color: #1F3A5F;
+  border: 1px solid #1F3A5F;
+}
+
+.about .ctaBtns .secondary:hover {
+  background-color: #1F3A5F;
+  color: white;
+}
+
+@media (max-width: 600px){
+  .about .hero{
+    padding: 50px 16px;
+  }
+
+  .about .hero h1{
+    font-size: 30px;
+  }
+
+  .about .hero p{
+    font-size: 16px;
+  }
+
+  .about .mission{
+    padding: 40px 16px 30px;
+  }
+
+  .about .statRow{
+    gap: 30px;
+    padding: 30px 16px;
+  }
+
+  .about .values{
+    padding: 40px 16px;
+  }
+
+  .about .valueItem{
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .about .ctaBtns{
+    flex-wrap: wrap;
+  }
+}
+
+/* These full-width bands have horizontal padding; without border-box they
+   were 20px wider than the screen and caused a sideways scrollbar. */
+.about .hero,
+.about .statRow,
+.about .cta{
+  box-sizing: border-box;
+}

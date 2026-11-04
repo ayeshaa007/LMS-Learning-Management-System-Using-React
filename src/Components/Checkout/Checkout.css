@@ -1,0 +1,123 @@
+.checkout{
+    display: flex;
+    flex-direction: row;
+padding: 30px;
+gap: 20px;
+}
+
+.checkout *{
+    margin: 0;
+    padding: 0;
+}
+
+.checkout .left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+}
+
+.checkout .left h4, .checkout .right h4{
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.checkout .left .nameRow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: white;
+     border: 1px solid #5B6472;
+     border-radius: 10px;
+}
+
+.nameRow span{
+    color: black;
+    font-weight: 600;
+}
+
+.checkout .left input, .checkout .right input{
+    padding: 15px;
+    background-color: white;
+     border: 1px solid #5B6472;
+     border-radius: 10px;
+     font-size: 20px; 
+}
+
+.left .total{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total p{
+    color: #5B6472;
+    font-size: 16px;
+}
+
+.total span{
+    color: #1F3A5F;
+    font-weight: 550;
+}
+
+.checkout .right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+     padding: 10px;
+}
+
+.checkout .right .date{
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 10px;
+padding-top: 5px;
+}
+
+.checkout .right  button{
+    color: white;
+    background-color: #1F3A5F;
+       padding: 10px 12px;
+    font-size:20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.checkout .right  button:hover{
+     background-color: #16293F;
+}
+
+@media (max-width: 800px){
+    .checkout{
+        flex-direction: column;
+        padding: 16px;
+        gap: 10px;
+    }
+
+    .checkout .left,
+    .checkout .right{
+        width: auto;
+    }
+}
+
+@media (max-width: 480px){
+    .checkout .left input,
+    .checkout .right input{
+        font-size: 16px;
+        padding: 12px;
+        box-sizing: border-box;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .checkout .right .date{
+        gap: 6px 10px;
+    }
+}

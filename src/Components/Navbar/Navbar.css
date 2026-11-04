@@ -1,0 +1,161 @@
+.navbar{
+    width: 100%;
+    background-color: #FFFFFF;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 0.5px solid #DCE6F0;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 7px 40px;
+align-items: center;
+}
+
+nav span{
+    gap: 7px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav span img{
+width: 30px;
+height: 30px;
+}
+
+nav span span{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #1F3A5F;
+    margin: auto;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style-type: none;
+}
+
+nav ul a li{
+font-size: 17px;
+color: #9AA3AF;
+cursor: pointer;
+}
+
+nav ul li:hover{
+    color: #1F3A5F;
+}
+
+nav ul  a.active li{
+    color: #1F3A5F;
+    text-decoration: underline;
+}
+
+nav .btns{
+    display: flex;
+    align-items: center;
+   gap: 10px;
+   color: #5B6472;
+}
+
+.loginBtn{
+    padding: 2px 5px;
+    font-size:17px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+
+.loginBtn:hover{
+    color: #9AA3AF;
+}
+
+.signupBtn{
+     padding: 10px;
+    font-size:17px;
+    border: none;
+    background-color: #D9A441;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.signupBtn:hover{
+     background-color: #C08F32;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+/* On wide screens the wrapper disappears so the layout is exactly as before. */
+.navMenu{
+    display: contents;
+}
+
+.menuToggle{
+    display: none;
+    background: none;
+    border: 1px solid #DCE6F0;
+    border-radius: 8px;
+    color: #1F3A5F;
+    font-size: 22px;
+    line-height: 1;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 900px){
+    nav{
+        padding: 7px 20px;
+    }
+
+    nav ul{
+        gap: 18px;
+    }
+}
+
+@media (max-width: 768px){
+    nav{
+        flex-wrap: wrap;
+        padding: 8px 16px;
+    }
+
+    .menuToggle{
+        display: inline-block;
+    }
+
+    .navMenu{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 10px 0 14px;
+    }
+
+    .navMenu.open{
+        display: flex;
+    }
+
+    nav ul{
+        flex-direction: column;
+        gap: 14px;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul a li{
+        font-size: 18px;
+    }
+
+    nav .btns{
+        flex-wrap: wrap;
+    }
+}
